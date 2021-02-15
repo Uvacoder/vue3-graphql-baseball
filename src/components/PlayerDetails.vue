@@ -71,6 +71,7 @@ export default {
       props
     );
 
+    // the useResult composable returns a Vue ref, so you need to access it via .value
     const pitcher = useResult(result, null, (data) => data.pitcher);
 
     watch(() => {
